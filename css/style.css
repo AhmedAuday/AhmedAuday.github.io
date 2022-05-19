@@ -1,0 +1,438 @@
+/* *************************************************************
+
+1. NavBar 
+2. ShowCaseImage 
+3. button
+4. CustomMarginAndPadding 
+5. Anmaited
+6. ContactForm
+7. ReadMore Screen
+
+Color used in this page :
+#FBFBFB  rgb(251, 251, 251) white body 
+#F38181 rgb(243, 129, 129) red text-secondory
+        rgb(33, 37, 41)    dark bg-dark
+#ffffff rgb(255, 255, 255) white text-light 
+*****************************************************************
+*/
+
+
+/**
+**********************
+**      1. NAVBAR ****
+**********************
+*/
+
+.Ahmed {
+    font-family: fantasy
+}
+
+.nav-link {
+    color: #F38181!important;
+}
+
+.nav-link:hover {
+    color: #ffffff!important;
+}
+
+
+/**
+*************************
+** 2. ShowCase Image ****
+*************************
+*/
+
+.img-fluid-custom {
+    max-width: 100%;
+    height: auto;
+    border-radius: 20%;
+    padding-top: 2.4rem;
+    width: 50%;
+    margin-left: auto;
+}
+
+.img-conta {
+    margin-top: -3.5rem;
+}
+
+
+/**
+*******************
+**     3. Button **
+*******************
+*/
+
+button,
+input {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    letter-spacing: 1.4px;
+}
+
+.buttone {
+    display: inline-block;
+    color: #fff;
+    text-decoration: none;
+    padding: 20px 50px;
+    border: 3px solid #F38181;
+    border-radius: 10px;
+}
+
+.buttone:hover {
+    animation: pulsate 1s ease-in-out;
+    color: #F38181;
+}
+
+@keyframes pulsate {
+    0% {
+        box-shadow: 0 0 25px #f3818140, 0 0 50px #F38181;
+    }
+}
+
+
+/**
+*******************************
+** 4. CustomMarginAndPadding **
+*******************************
+*/
+
+.i {
+    font-size: 3.4rem;
+    padding-left: 3rem;
+}
+
+.mt-5-cust {
+    margin-top: 7rem
+}
+
+.mt-5-cust-img {
+    margin-top: 4rem
+}
+
+.ulll {
+    list-style-type: "― ";
+    padding-left: 1rem;
+}
+
+.mb-5-custom {
+    margin-top: 6rem;
+    margin-bottom: 7rem;
+}
+
+.mb-5-customExe {
+    margin-top: 10rem;
+}
+
+.mb-7-custom {
+    margin-top: 5rem;
+    margin-bottom: 10rem;
+}
+
+.media {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: start;
+    align-items: flex-start;
+}
+
+.mr-5 {
+    margin-left: -1.9rem;
+}
+
+.media-body {
+    -ms-flex: 1;
+    flex: 1;
+}
+
+
+/**
+***********************
+**    5. Anmaited **
+***********************
+*/
+
+.animated-background {
+    background: linear-gradient( to right, #F38181, #205375);
+    background-size: 400% 400%;
+    animation: animate-background 10s infinite ease-in-out;
+}
+
+@keyframes animate-background {
+    0% {
+        background-position: 0 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0 50%;
+    }
+}
+
+
+/**
+***********************
+**    6. ContactForm **
+***********************
+*/
+
+.background {
+    display: flex;
+    min-height: 100vh;
+}
+
+.containerf {
+    flex: 0 6 1000px;
+    margin: auto;
+    padding: 10px;
+}
+
+.screen {
+    position: relative;
+    background: #3e3e3e;
+    border-radius: 15px;
+    flex-basis: inherit;
+}
+
+.screen:after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 20px;
+    right: 20px;
+    bottom: 0;
+    border-radius: 15px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, .4);
+    z-index: -1;
+}
+
+.screen-header {
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    background: #4d4d4f;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+.screen-header-left {
+    margin-right: auto;
+}
+
+.screen-header-button {
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    margin-right: 3px;
+    border-radius: 8px;
+    background: white;
+}
+
+.screen-header-button.close {
+    background: #ed1c6f;
+}
+
+.screen-header-button.maximize {
+    background: #e8e925;
+}
+
+.screen-header-button.minimize {
+    background: #74c54f;
+}
+
+.screen-header-right {
+    display: flex;
+}
+
+.screen-header-ellipsis {
+    width: 3px;
+    height: 3px;
+    margin-left: 2px;
+    border-radius: 8px;
+    background: #999;
+}
+
+.screen-body {
+    display: flex;
+}
+
+.screen-body-item {
+    flex: 1;
+    padding: 50px;
+}
+
+.screen-body-item.left {
+    display: flex;
+    flex-direction: column;
+}
+
+.app-title {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    color: #F38181;
+    font-size: 26px;
+}
+
+.app-title:after {
+    content: '';
+    display: block;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    width: 25px;
+    height: 4px;
+    background: #FBFBFB;
+}
+
+.app-contact {
+    margin-top: auto;
+    font-size: 8px;
+    color: #888;
+}
+
+.app-form-button {
+    background: none;
+    border: none;
+    color: #F38181;
+    font-size: 14px;
+    cursor: pointer;
+    outline: none;
+}
+
+.app-form-button:hover {
+    color: #eda4a4;
+}
+
+.form-group {
+    transition: all .3s;
+}
+
+.form-label {
+    font-size: .2em;
+    color: var(--font-color);
+    display: block;
+    opacity: 0;
+    transition: all .3s;
+    transform: translateX(-50px);
+}
+
+.form-control {
+    color: #f9f9f9;
+    box-shadow: none;
+    border-radius: 0;
+    border-style: none none solid none;
+    width: 100%;
+    font-size: 0.9rem;
+    transition: all .6s;
+    background-color: #3e3e3e;
+}
+
+.form-control::placeholder {
+    color: #aaa;
+}
+
+.form-control:focus {
+    color: #f9f9f9;
+    box-shadow: none;
+    outline: none;
+    background-color: #3e3e3e;
+}
+
+.form-group:focus-within {
+    transform: scale(1.1, 1.1);
+}
+
+.form-control:invalid:focus {
+    border-color: red;
+}
+
+.form-control:valid:focus {
+    border-color: green;
+}
+
+.submitting {
+    float: left;
+    width: 100%;
+    padding: 10px 0;
+    display: none;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+#contactForm .error {
+    color: red;
+    font-size: 12px;
+}
+
+#contactForm .form-control {
+    font-size: 16px;
+}
+
+#message {
+    resize: vertical;
+}
+
+#form-message-warning,
+#form-message-success {
+    display: none;
+}
+
+#form-message-warning {
+    color: red;
+}
+
+#form-message-success {
+    color: #28a745;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+
+/**
+***********************
+**7. ReadMore Screen **
+***********************
+*/
+
+.backgroundrd {
+    background-color: #33516f;
+    padding-bottom: 0.1px;
+    padding-top: 15px;
+}
+
+.img-fluid-custom-Work {
+    height: auto;
+    width: 70%;
+}
+
+.position-relative {
+    position: relative!important;
+    right: 30rem;
+    top: 4rem;
+}
+
+.img-conta {
+    margin-top: -3.5rem;
+}
+
+.breadcrumb-background {
+    background-color: #c7ced6d8;
+}
+
+.breadcrumb-link-cust {
+    color: #F38181;
+    text-decoration: none;
+    transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out
+}
+
+.breadcrumb-cust {
+    color: #F38181;
+    text-decoration: none;
+    transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out
+}
+
+.breadcrumb-link-cust:hover {
+    color: #efb4b4;
+}
